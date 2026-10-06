@@ -41,10 +41,28 @@ done
 
 # while loop
 
+
+<< comment
 num=0
 
 while (( num <= 10))
 do
 	echo "Sending Data....."
-	(( $num++ ))
+	(( num++ ))
+done
+
+comment
+
+
+num=1
+
+while (( num <= 10))
+do
+	if (( num % 2 == 0))
+	then
+		echo "$num is even"
+	else
+		echo "$num is odd"
+	fi
+	(( num++ ))
 done
